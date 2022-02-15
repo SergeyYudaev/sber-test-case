@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/postgres?currentSchema=public
+    username: test
+    password: test
+    driver-class-name: org.postgresql.Driver
+    name: main
+
+application:
+  #  Количество строк, добавляемых в БД при старте приложения.
+  initial-lines-count: 10
+
+logging:
+  level:
+    ru.syudaev.*: DEBUG
